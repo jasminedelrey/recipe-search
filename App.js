@@ -68,3 +68,19 @@ class App extends Component {
 
 
 export default App;
+
+                                        /*                                
+if(
+        (((cprops[0] < 500) && (cprops[1] == ('low'))) ||
+        ((cprops[0] >= 500 && cprops[0] < 900) && (cprops[1] == ('med'))) ||
+        ((cprops[0] >= 900) && (cprops[1] == ('high'))) ||
+        (cprops[0] == cprops[1])) &&
+          
+        (((pprops[0] < 35) && (pprops[1] == ('low'))) ||
+        ((pprops[0] >= 35 && pprops[0] < 60) && (pprops[1] == ('med'))) ||
+        ((pprops[0] > 60) && (pprops[1] == ('high'))) ||
+        (pprops[0] == pprops[1]))) {
+     
+     //cprops[0] is the actual data value, and cprops[1] is the filter chosen by the user.  Same 
+     
+     */
