@@ -43,3 +43,20 @@
         {foodComponent}
       </div>
     </div>
+
+
+              <select ref = {this.prepTimeRef} name= "prepTime" id = "prep-time">
+                <option value="">--Please choose a prep time--</option>
+                <option value= "low"> Less than 35 min </option> 
+                <option value= "med"> 35 min - 1 hr </option> 
+                <option value= "high"> More than 1 hr </option> 
+              </select>
+              
+              <br></br>
+              
+              <select ref = {this.calorieRef} name= "calories" id = "calories">
+                <option value="">--Please choose calories--</option>
+                <option value= "low"> Less than 500 cal </option> 
+                <option value= "med"> 501-900 cal </option> 
+                <option value= "high"> More than 900 cal </option> 
+              </select>
