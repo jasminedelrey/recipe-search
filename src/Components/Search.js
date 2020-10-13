@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Food.css';
 
-class Food extends Component {
+class Search extends Component {
     constructor() {
         super();
         this.state={
@@ -10,6 +10,19 @@ class Food extends Component {
         this._handleClick = this._handleClick.bind(this);
         
     }
+
+    // _handleResults() {
+    //     Object.entries(this.props.food).map(([dietLabel]) => {
+    //         console.log(dietLabel)
+    //         if (this.props.query === dietLabel){
+    //             this.setState((previousState) => {
+    //                 return {
+    //                     showFood: !previousState.showFood
+    //                 }
+    //             })
+    //         }
+    //     })
+    // }
 
     _handleClick() {
         if(!this.state.showFood) {
@@ -25,12 +38,11 @@ class Food extends Component {
     render() {
         return(
             <div className= "food">
-                <img src = {this.state.showFood ? this.props.food.title : this.props.food.image}
-                alt = ""
-                onClick = {this._handleClick} />
+                <button className = "search-food"
+                        onClick = {this._handleClick}> {this.props.food.image}</button>
             </div>
         );
     }
 }
 
-export default Food;
+export default Search;
